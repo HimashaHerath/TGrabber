@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{% block head %}
+    <title>Previous Searches</title>
+{% endblock %}
+{% block body %}
+    <h1>Previous Searches</h1>
+    <form action="view_images" method="post">
+        <label for="usernames">Select a username:</label>
+        <select id="usernames" name="usernames">
+            {% for username in usernames %}
+                <option value="{{ username }}">{{ username }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="View Images">
+    </form>
+{% endblock %}
+

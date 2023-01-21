@@ -1,4 +1,46 @@
-body{
-    margin: 0%;
-    font-family: sans-serif;
+#Head{
+    text-align: center;
 }
+#form{
+    text-align: center;
+}
+/* Set the background color of the body */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Style the title */
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Style the navigation */
+  nav {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the navigation links */
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Style the selected navigation link */
+  nav a.selected {
+    color: #fff;
+    background-color: #333;
+    padding: 5px;
+  }
+  

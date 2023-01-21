@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/image.css')}}">
+    <title>Images for {{ username }}</title>
+{% endblock %}
+{% block body %}
+    <h1>Images for {{ username }}</h1>
+    <section id="image-container">
+    {% for image in images %}
+    <img src="{{ image }}" alt="{{ username }} image">
+    {% endfor %}
+</section>
+
+{% endblock %}
